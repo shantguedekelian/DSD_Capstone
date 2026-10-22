@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Permit Recommendation System</title>
+<style>
+  body {
+    margin: 0;
+    font-family: system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+    font-size: 20px;
+    line-height: 1.6;
+    color: #222;
+    background: #fff;
+  }
+  header { background: #1f3a5f; color: #fff; padding: 64px 24px; }
+  .wrap { max-width: 900px; margin: 0 auto; }
+  header h1 { margin: 0 0 8px; font-size: 40px; line-height: 1.2; }
+  header p { margin: 4px 0; color: #d6e0ee; }
+  section { padding: 56px 24px; border-bottom: 1px solid #ddd; }
+  section:nth-of-type(even) { background: #f5f7fa; }
+  .label { font-size: 14px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; color: #1f5fa8; margin: 0 0 6px; }
+  h2 { margin: 0 0 20px; font-size: 32px; color: #1f3a5f; }
+  h3 { margin: 24px 0 8px; font-size: 22px; color: #1f3a5f; }
+  ul { padding-left: 24px; }
+  li { margin: 8px 0; }
+  .box { background: #fff; border: 1px solid #ccd3dc; border-radius: 8px; padding: 16px 22px; margin-top: 24px; }
+  .flow { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin: 24px 0; }
+  .step { flex: 1 1 200px; background: #1f3a5f; color: #fff; padding: 16px 18px; border-radius: 8px; font-weight: 600; }
+  .arrow { font-size: 24px; color: #1f5fa8; }
+  .note { font-size: 15px; color: #666; }
+  footer { padding: 28px 24px; text-align: center; font-size: 14px; color: #666; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <h1>A Recommendation System for Permit Submitters</h1>
+    <p>DSC 180 · Domain D42 · Week 5 update</p>
+    <p>Shant · Alyx · Adit</p>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <p class="label">1 · Problem statement</p>
+    <h2>Background: what DSD is and what the problem is</h2>
+    <h3>What DSD is</h3>
+    <p>The City of San Diego's Development Services Department (DSD) reviews plans and issues permits for construction and development projects, then inspects the work.</p>
+    <h3>The problem</h3>
+    <p>Resubmittal cycles are high. Applicants submit, get comments back, fix things, and resubmit, and every round adds more review time for the City and more waiting for the applicant.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="label">2 · Current system</p>
+    <h2>What the system is like today and where it breaks</h2>
+    <ul>
+      <li>People have no clear idea what is needed for their permit to get approved.</li>
+      <li>The information they need is too spread out for a normal person to know all of it.</li>
+      <li>That leads to many resubmittals, and money and time spent getting nowhere.</li>
+      <li>Applicants get frustrated, and the City wastes money and resources on repeat reviews.</li>
+    </ul>
+    <div class="box">
+      <b>Early evidence (exploratory, preliminary):</b> permits that need plan review take about 100 days, and frequent filers get building permits in about 20 days versus about 100 for everyone else. Experience seems to matter, which fits the idea that knowing what to include is the hard part.
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="label">3 · Our solution</p>
+    <h2>A recommendation system for submitters</h2>
+    <p>A tool that tells people what to look out for and what they need to include for their specific type of permit.</p>
+    <div class="flow">
+      <div class="step">Past review data</div><div class="arrow">→</div>
+      <div class="step">ML model (decision tree)</div><div class="arrow">→</div>
+      <div class="step">Recommendations for the submitter</div>
+    </div>
+    <h3>How we'll build it</h3>
+    <ul>
+      <li>Train an ML model on the review data we received.</li>
+      <li>Look for patterns by permit type and by location.</li>
+      <li>We are still exploring, but we are currently leaning toward a decision tree (a decision model).</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="label">4 · Impact</p>
+    <h2>Why this matters</h2>
+    <ul>
+      <li>Reduces friction on both sides: easier for submitters and applicants, and less time and money spent by both the applicant and the City.</li>
+      <li>Faster turnaround, not just for this permit but for others too, because fewer repeat reviews free up reviewers.</li>
+      <li>A speedup in the overall permitting system.</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="label">5 · Roadmap</p>
+    <h2>Timeline</h2>
+    <ul>
+      <li><b>Week 4: Thursday, Oct 22:</b> Received the data.</li>
+      <li><b>Week 5: Monday, Oct 26:</b> Check in with Ben (TA) and Bijan / Capstone Panel.</li>
+      <li><b>Week 5: Tuesday, Oct 27:</b> Meet with the DSD team, David and Mazen.</li>
+      <li><b>Week 5: Thursday, Oct 29:</b> Preliminary model ready to test.</li>
+    </ul>
+  </div>
+</section>
+
+<footer>Preliminary analysis of unvalidated data · not official City of San Diego or DSD findings</footer>
+
+</body>
+</html>
