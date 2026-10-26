@@ -29,6 +29,9 @@
   .step { flex: 1 1 200px; background: #1f3a5f; color: #fff; padding: 16px 18px; border-radius: 8px; font-weight: 600; }
   .arrow { font-size: 24px; color: #1f5fa8; }
   .note { font-size: 15px; color: #666; }
+  table { border-collapse: collapse; width: 100%; font-size: 17px; margin-top: 12px; }
+  th, td { text-align: left; padding: 10px 12px; border: 1px solid #ccd3dc; vertical-align: top; }
+  th { background: #1f3a5f; color: #fff; }
   footer { padding: 28px 24px; text-align: center; font-size: 14px; color: #666; }
 </style>
 </head>
@@ -64,7 +67,10 @@
       <li>Applicants get frustrated, and the City wastes money and resources on repeat reviews.</li>
     </ul>
     <div class="box">
-      <b>Early evidence (exploratory, preliminary):</b> permits that need plan review take about 100 days, and frequent filers get building permits in about 20 days versus about 100 for everyone else. Experience seems to matter, which fits the idea that knowing what to include is the hard part.
+      <b>Early evidence from the Reviews data (preliminary):</b> of 168,278 finished record-and-discipline reviews, <b>53.9% needed at least one resubmittal</b>. Only 46% were approved in a single round, and about 5% took 5 or more rounds.
+    </div>
+    <div class="box">
+      <b>Earlier exploratory work:</b> permits that need plan review take about 100 days, and frequent filers get building permits in about 20 days versus about 100 for everyone else. Experience seems to matter, which fits the idea that knowing what to include is the hard part.
     </div>
   </div>
 </section>
@@ -73,18 +79,34 @@
   <div class="wrap">
     <p class="label">3 · Our solution</p>
     <h2>A recommendation system for submitters</h2>
-    <p>A tool that tells people what to look out for and what they need to include for their specific type of permit.</p>
+    <p>A tool that helps people prepare for their specific type of permit, so they know what to expect before they submit.</p>
     <div class="flow">
       <div class="step">Past review data</div><div class="arrow">→</div>
       <div class="step">ML model (decision tree)</div><div class="arrow">→</div>
-      <div class="step">Recommendations for the submitter</div>
+      <div class="step">Risk-based tips for the submitter</div>
     </div>
     <h3>How we'll build it</h3>
     <ul>
-      <li>Train an ML model on the review data we received.</li>
+      <li>Train an ML model on the review data we received. For each record and discipline, the target is the number of review rounds it took (or simply: did it need a resubmittal?).</li>
       <li>Look for patterns by permit type and by location.</li>
+      <li>Test the model on records it has never seen, split by record so the same permit never appears in both training and testing.</li>
       <li>We are still exploring, but we are currently leaning toward a decision tree (a decision model).</li>
     </ul>
+
+    <h3>What we can recommend today vs. what we need</h3>
+    <div class="box">
+      <b>What our data supports now: risk by reviewer.</b> For example: "Permits like yours had about a 70% chance of a Structural resubmittal, so be prepared for that." We can do this because the Reviews data tells us the outcome of every review (Recheck Required or Signed Off), by permit type, location and discipline.
+    </div>
+    <div class="box">
+      <b>What it can't support yet: "you're missing X."</b> We don't have the reviewers' comments, the reasons for corrections, or the list of documents that were submitted. We only know that a review needed a recheck, not why. Tips about specific missing items need that data.
+    </div>
+    <div class="box">
+      <b>How we get it:</b>
+      <ul>
+        <li>Ask the DSD team to share the review comments and correction reasons.</li>
+        <li>If they can't, collect them ourselves by web scraping, but only if the comments are publicly available and allowed to be collected. We would check with DSD first.</li>
+      </ul>
+    </div>
   </div>
 </section>
 
@@ -96,18 +118,55 @@
       <li>Reduces friction on both sides: easier for submitters and applicants, and less time and money spent by both the applicant and the City.</li>
       <li>Faster turnaround, not just for this permit but for others too, because fewer repeat reviews free up reviewers.</li>
       <li>A speedup in the overall permitting system.</li>
+      <li>As we saw, frequent filers get building permits in about 20 days versus about 100 for everyone else. If we can get people closer to the 20 day waiting period that would be a significant improvement.</li>
     </ul>
   </div>
 </section>
 
 <section>
   <div class="wrap">
-    <p class="label">5 · Roadmap</p>
+    <p class="label">5 · Progress so far</p>
+    <h2>Reviews data: what we built and what we found</h2>
+    <p>We turned the Reviews data into one row per record and discipline, with the number of review rounds as our target.</p>
+    <ul>
+      <li><b>Discipline:</b> a specialty reviewer, such as Structural, Electrical or Fire.</li>
+      <li><b>Cycle:</b> one round of review. The first review is cycle 1, and each resubmittal adds one.</li>
+    </ul>
+
+    <h3>What we found (finished records only)</h3>
+    <ul>
+      <li><b>53.9%</b> of record-discipline reviews needed at least one resubmittal.</li>
+      <li>It varies a lot by discipline: Minor Right of Way is at about 91%, Engineering Building Review, Structural, Water &amp; Sewer and Right of Way Dry Utilities are around 70&ndash;75%, and Electrical and Fire Alarm are around 33%.</li>
+      <li>Faster processing tracks (Express, Expedite) look worse in the raw numbers, but that is mostly because they handle different kinds of work. Within Building Construction, Express and Standard are both 65.2%.</li>
+    </ul>
+
+    <h3>Data quality check</h3>
+    <table>
+      <tr><th>Issue</th><th>Size</th><th>What we did</th></tr>
+      <tr><td>Duplicate review rows (same record, task and cycle)</td><td>459 rows</td><td>Kept the non-abandoned copy</td></tr>
+      <tr><td>Abandoned tasks (never closed, record moved on)</td><td>4,829 rows</td><td>Dropped them. This removes 1,366 pairs and lowers the cycle count for 669 more (under 1% of pairs)</td></tr>
+      <tr><td>Workflow steps (not real reviews)</td><td>2,213 rows</td><td>Dropped</td></tr>
+      <tr><td>Other City departments and outside agencies</td><td>37,794 rows</td><td>Excluded, so we focus on DSD's own reviews</td></tr>
+      <tr><td>Negative review durations</td><td>633 rows</td><td>Kept, since they don't affect cycle counts</td></tr>
+      <tr><td>Records still in review (cycle count not final)</td><td>201,500 pairs, 168,278 finished</td><td>Analyze finished records only</td></tr>
+    </table>
+    <p class="note">Expired, Cancelled and Withdrawn records count as finished. They have a lower resubmittal rate (42%) and pull the overall rate down by about one point.</p>
+
+    <div class="box">
+      <b>Open question for DSD:</b> does a discipline's cycle number go up only when that discipline asks for corrections, or whenever the whole record is resubmitted? The answer decides whether our target measures each discipline's own corrections.
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="label">6 · Roadmap</p>
     <h2>Timeline</h2>
     <ul>
       <li><b>Week 4: Thursday, Oct 22:</b> Received the data.</li>
+      <li><b>Week 5: Sunday, Oct 25:</b> Cleaned the Reviews data and built the review-cycle table (done).</li>
       <li><b>Week 5: Monday, Oct 26:</b> Check in with Ben (TA) and Bijan / Capstone Panel.</li>
-      <li><b>Week 5: Tuesday, Oct 27:</b> Meet with the DSD team, David and Mazen.</li>
+      <li><b>Week 5: Tuesday, Oct 27:</b> Meet with the DSD team, David and Mazen. Ask whether review comments and correction reasons can be shared.</li>
       <li><b>Week 5: Thursday, Oct 29:</b> Preliminary model ready to test.</li>
     </ul>
   </div>
