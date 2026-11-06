@@ -1,2 +1,10 @@
 *.csv
-/data
+data/*
+!data/checklist.json
+.venv/
+.env
+/user_helper_prototype/docs
+.DS_Store
+__pycache__/
+.ipynb_checkpoints/
+!data/*.dvc

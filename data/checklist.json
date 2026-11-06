@@ -1,0 +1,2157 @@
+{
+  "meta": {
+    "scenario": "Garage conversion to ADU, single-family",
+    "built_from": [
+      {
+        "file": "IB_400.pdf",
+        "title": "Accessory Dwelling Unit/Junior Accessory Dwelling Unit (Information Bulletin 400)",
+        "date_or_revision": "January 2026"
+      },
+      {
+        "file": "IB_140.pdf",
+        "title": "Residential Addition/Remodel (Information Bulletin 140)",
+        "date_or_revision": "April 2026"
+      },
+      {
+        "file": "IB_122.pdf",
+        "title": "How to Prepare a Site Plan and Vicinity Map (Information Bulletin 122)",
+        "date_or_revision": "May 2026"
+      },
+      {
+        "file": "building_permit_guide.pdf",
+        "title": "Apply for a Building Construction Permit",
+        "date_or_revision": "Rev. 3/14/2023 (cover page shows Rev. 8/19/2021; pages 6, 11, 18 and 57 also show 8/19/2021)"
+      }
+    ],
+    "status": "DRAFT - needs DSD staff review"
+  },
+  "items": [
+    {
+      "id": "REQ-001",
+      "item": "Building Permit required for ADU",
+      "category": "process",
+      "requirement": "A Building Permit is required to create an ADU; there are no exemptions.",
+      "applies_when": "always",
+      "required_level": "required",
+      "source": {
+        "file": "IB_400.pdf",
+        "page": 15,
+        "quote": "A Building Permit is required to create an ADU or JADU. There are no exemptions."
+      },
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "id": "REQ-002",
+      "item": "Permit type depends on number of units",
+      "category": "process",
+      "requirement": "Either a Combination Building Permit or a Building Permit is issued depending on how many dwelling units the ADU(s) create.",
+      "applies_when": "always (to decide which permit type to select)",
+      "required_level": "required",
+      "source": {
+        "file": "IB_400.pdf",
+        "page": 15,
+        "quote": "either a Combination Building Permit or a Building Permit will be issued"
+      },
+      "confidence": "medium",
+      "notes": "IB 400 sends the reader to IB 125 to confirm permit type; IB 125 was not provided. The 2023 guide (p.8) says to select Combination Building Permit for a single family dwelling or duplex."
+    },
+    {
+      "id": "REQ-003",
+      "item": "Coastal Development Permit",
+      "category": "process",
+      "requirement": "A Coastal Development Permit is required for ADUs in the Coastal Overlay Zone that include conversion of non-habitable space (or are not fully inside the existing primary structure, or add habitable area).",
+      "applies_when": "Property is in the Coastal Overlay Zone",
+      "required_level": "conditional",
+      "source": {
+        "file": "IB_400.pdf",
+        "page": 15,
+        "quote": "A Coastal Development Permit (CDP) is required for the creation of all ADUs and JADUs within the Coastal Overlay Zone"
+      },
+      "confidence": "medium",
+      "notes": "Exact exceptions are in the text after this quote. IB 400 p.4 calls garages 'non-livable space', but no document says outright that a garage counts as non-habitable for the CDP rule. DSD should confirm."
+    },
+    {
+      "id": "REQ-004",
+      "item": "Site plan and vicinity map",
+      "category": "plans",
+      "requirement": "Submit a site plan and vicinity map for the ADU.",
+      "applies_when": "always",
+      "required_level": "required",
+      "source": {
+        "file": "IB_400.pdf",
+        "page": 16,
+        "quote": "Site Plan and Vicinity Map (See Information Bulletin 122"
+      },
+      "confidence": "high",
+      "notes": "Content of the site plan is in IB 122 (see the IB 122 items)."
+    },
+    {
+      "id": "REQ-005",
+      "item": "Floor plans and roof plans",
+      "category": "plans",
+      "requirement": "Submit floor plans and roof plans.",
+      "applies_when": "always",
+      "required_level": "required",
+      "source": {
+        "file": "IB_400.pdf",
+        "page": 16,
+        "quote": "Floor Plans and Roof Plans."
+      },
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "id": "REQ-006",
+      "item": "Elevations and sections",
+      "category": "plans",
+      "requirement": "Submit elevations and sections as applicable.",
+      "applies_when": "as applicable (condition not defined in the document)",
+      "required_level": "conditional",
+      "source": {
+        "file": "IB_400.pdf",
+        "page": 16,
+        "quote": "Elevations and Sections (as applicable)."
+      },
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "id": "REQ-007",
+      "item": "Structural plans and details",
+      "category": "plans",
+      "requirement": "Submit structural plans and details.",
+      "applies_when": "always",
+      "required_level": "required",
+      "source": {
+        "file": "IB_400.pdf",
+        "page": 16,
+        "quote": "Structural plans and details."
+      },
+      "confidence": "high",
+      "notes": "IB 400 does not say what the structural plans must contain for a garage conversion."
+    },
+    {
+      "id": "REQ-008",
+      "item": "Structural and/or truss calculations",
+      "category": "plans",
+      "requirement": "Submit structural calculations and/or truss calculations as applicable.",
+      "applies_when": "as applicable (condition not defined in the document)",
+      "required_level": "conditional",
+      "source": {
+        "file": "IB_400.pdf",
+        "page": 16,
+        "quote": "Structural calculations and/or truss calculations (as applicable)."
+      },
+      "confidence": "high",
+      "notes": "The online form asks whether the project includes structural calculations and separate truss calculations (guide p.9)."
+    },
+    {
+      "id": "REQ-009",
+      "item": "Title 24 energy calculations",
+      "category": "plans",
+      "requirement": "Submit Title 24 energy calculations.",
+      "applies_when": "always",
+      "required_level": "required",
+      "source": {
+        "file": "IB_400.pdf",
+        "page": 16,
+        "quote": "Title 24 Energy calculations."
+      },
+      "confidence": "high",
+      "notes": "IB 400 does not name the specific Title 24 forms. IB 140 p.6 names MF-1R and CF-1R. IB 400 p.8 says ADUs built within existing space are not subject to the solar panel requirement."
+    },
+    {
+      "id": "REQ-010",
+      "item": "General Application form DS-3032",
+      "category": "forms",
+      "requirement": "Submit the General Application, form DS-3032.",
+      "applies_when": "always",
+      "required_level": "required",
+      "source": {
+        "file": "IB_400.pdf",
+        "page": 16,
+        "quote": "General Application, DS-3032"
+      },
+      "confidence": "medium",
+      "notes": "IB 140 p.1 lists a different form (DS-345 Project Contacts Information) and never mentions DS-3032; the 2023 guide describes an online application instead. Unclear whether DS-3032 is still uploaded with the online application."
+    },
+    {
+      "id": "REQ-011",
+      "item": "Water Meter Data Card DS-16 (IB 400)",
+      "category": "forms",
+      "requirement": "Submit the Water Meter Data Card, form DS-16.",
+      "applies_when": "always, per IB 400 (see notes)",
+      "required_level": "required",
+      "source": {
+        "file": "IB_400.pdf",
+        "page": 16,
+        "quote": "Water Meter Data Card, DS-16"
+      },
+      "confidence": "low",
+      "notes": "CONFLICT: IB 400 lists DS-16 with no condition; IB 140 p.2 says it is needed only if new plumbing fixtures are added. Which applies to a garage conversion is unclear."
+    },
+    {
+      "id": "REQ-012",
+      "item": "Storm Water Applicability Checklist DS-560 (IB 400)",
+      "category": "forms",
+      "requirement": "Submit the Storm Water Applicability Checklist, form DS-560.",
+      "applies_when": "always",
+      "required_level": "required",
+      "source": {
+        "file": "IB_400.pdf",
+        "page": 16,
+        "quote": "Storm Water Applicability Checklist, DS-560"
+      },
+      "confidence": "high",
+      "notes": "Consistent with IB 140 p.2."
+    },
+    {
+      "id": "REQ-013",
+      "item": "Project Submittal Manual section for single dwelling with ADU",
+      "category": "information",
+      "requirement": "Follow Project Submittal Manual Section 2A for a single primary dwelling unit (R3 occupancy) with an ADU.",
+      "applies_when": "Single primary dwelling unit with ADU (R3 occupancy)",
+      "required_level": "required",
+      "source": {
+        "file": "IB_400.pdf",
+        "page": 15,
+        "quote": "Project Submittal Manual Section 2A"
+      },
+      "confidence": "medium",
+      "notes": "The Project Submittal Manual was not provided, so its requirements are unknown."
+    },
+    {
+      "id": "REQ-014",
+      "item": "Fee schedule reference (IB 501)",
+      "category": "fees",
+      "requirement": "Check Information Bulletin 501 and the DSD Fees page for the complete list of applicable fees.",
+      "applies_when": "always",
+      "required_level": "required",
+      "source": {
+        "file": "IB_400.pdf",
+        "page": 16,
+        "quote": "For a complete list of all applicable fees, reference Information Bulletin 501"
+      },
+      "confidence": "medium",
+      "notes": "IB 501 was not provided; fee amounts are not in the four documents."
+    },
+    {
+      "id": "REQ-015",
+      "item": "School fees",
+      "category": "fees",
+      "requirement": "ADUs are subject to school fees; IB 146 explains when the fee applies.",
+      "applies_when": "Depends on IB 146 criteria",
+      "required_level": "conditional",
+      "source": {
+        "file": "IB_400.pdf",
+        "page": 16,
+        "quote": "ADUs and JADUs are subject to payment of School Fees."
+      },
+      "confidence": "medium",
+      "notes": "IB 146 not provided; whether a garage conversion owes this fee is not stated."
+    },
+    {
+      "id": "REQ-016",
+      "item": "General Plan Maintenance Fee",
+      "category": "fees",
+      "requirement": "The General Plan Maintenance Fee applies to all ADUs.",
+      "applies_when": "always",
+      "required_level": "required",
+      "source": {
+        "file": "IB_400.pdf",
+        "page": 16,
+        "quote": "the General Plan Maintenance Fee applies to all ADU and JADUs."
+      },
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "id": "REQ-017",
+      "item": "Development Impact Fee",
+      "category": "fees",
+      "requirement": "ADUs are subject to Development Impact Fee requirements under SDMC 142.0640(b)(1).",
+      "applies_when": "always, per IB 400 (see notes)",
+      "required_level": "required",
+      "source": {
+        "file": "IB_400.pdf",
+        "page": 16,
+        "quote": "ADUs are subject to Development Impact Fee requirements"
+      },
+      "confidence": "medium",
+      "notes": "The document does not say whether converting an existing garage is exempt."
+    },
+    {
+      "id": "REQ-018",
+      "item": "Regional Transportation Congestion Improvement Program fee",
+      "category": "fees",
+      "requirement": "Projects proposing more than one ADU must pay the Regional Transportation Congestion Improvement Program Fees.",
+      "applies_when": "Project proposes more than one ADU",
+      "required_level": "conditional",
+      "source": {
+        "file": "IB_400.pdf",
+        "page": 17,
+        "quote": "Projects proposing more than one ADU will be required to pay the Regional"
+      },
+      "confidence": "high",
+      "notes": "Likely not applicable to a single ADU."
+    },
+    {
+      "id": "REQ-019",
+      "item": "Inclusionary housing requirements",
+      "category": "fees",
+      "requirement": "ADU projects resulting in 10 or more total dwelling units (5 or more in the Coastal Overlay Zone) are subject to Inclusionary Housing requirements.",
+      "applies_when": "Project results in 10+ total dwelling units (5+ in Coastal Overlay Zone)",
+      "required_level": "conditional",
+      "source": {
+        "file": "IB_400.pdf",
+        "page": 17,
+        "quote": "Projects proposing one or more ADU that results in 10 or more total dwelling units"
+      },
+      "confidence": "high",
+      "notes": "Likely not applicable to a single-family lot."
+    },
+    {
+      "id": "REQ-020",
+      "item": "Fee payment method and payee",
+      "category": "fees",
+      "requirement": "Payments may be made online (encouraged), by check dropped at the Development Services Center, or at a Payments appointment; checks are made out to City Treasurer.",
+      "applies_when": "when paying fees",
+      "required_level": "recommended",
+      "source": {
+        "file": "IB_400.pdf",
+        "page": 17,
+        "quote": "All payments must be made out to"
+      },
+      "confidence": "medium",
+      "notes": "Online payment is 'encouraged', not required."
+    },
+    {
+      "id": "REQ-021",
+      "item": "Preapproved ADU plans option",
+      "category": "process",
+      "requirement": "An applicant may apply using preapproved ADU plans, which get a 30-day review; the applicant must contact the ADU provider about licensing cost.",
+      "applies_when": "Only if using preapproved plans",
+      "required_level": "conditional",
+      "source": {
+        "file": "IB_400.pdf",
+        "page": 16,
+        "quote": "applicants may apply for a permit using preapproved plans."
+      },
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "id": "REQ-022",
+      "item": "Apply online through the portal (IB 400)",
+      "category": "process",
+      "requirement": "Apply for ADUs through the online permitting account in digital paperless format.",
+      "applies_when": "always",
+      "required_level": "required",
+      "source": {
+        "file": "IB_400.pdf",
+        "page": 18,
+        "quote": "are now being accepted in digital paperless formats through an Online Permitting Account"
+      },
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "id": "REQ-023",
+      "item": "Select Building Construction record type",
+      "category": "form_question",
+      "requirement": "In the portal, under Building Applications, select 'Building Construction' for a new permit application.",
+      "applies_when": "always",
+      "required_level": "required",
+      "source": {
+        "file": "IB_400.pdf",
+        "page": 18,
+        "quote": "select “Building Construction .”"
+      },
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "id": "REQ-024",
+      "item": "ADU must have complete independent living facilities",
+      "category": "information",
+      "requirement": "An ADU must provide complete independent living facilities including provisions for living, sleeping, eating, cooking and sanitation.",
+      "applies_when": "always",
+      "required_level": "required",
+      "source": {
+        "file": "IB_400.pdf",
+        "page": 2,
+        "quote": "Provides complete independent living facilities for one or more persons"
+      },
+      "confidence": "high",
+      "notes": "This is a definition of an ADU, not a submittal item; plans would presumably need to show it."
+    },
+    {
+      "id": "REQ-025",
+      "item": "Minimum ADU floor area",
+      "category": "information",
+      "requirement": "The minimum gross floor area for an ADU is 150 square feet.",
+      "applies_when": "always",
+      "required_level": "required",
+      "source": {
+        "file": "IB_400.pdf",
+        "page": 4,
+        "quote": "The minimum gross floor area for an attached or detached ADU is 150 square feet."
+      },
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "id": "REQ-026",
+      "item": "Minimum room dimensions",
+      "category": "information",
+      "requirement": "Minimum room dimension requirements in the California Building Standards Code apply to the ADU.",
+      "applies_when": "always",
+      "required_level": "required",
+      "source": {
+        "file": "IB_400.pdf",
+        "page": 5,
+        "quote": "Minimum room dimension requirements contained within the California Building Standards Code are applicable."
+      },
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "id": "REQ-027",
+      "item": "Setbacks for converted structures",
+      "category": "information",
+      "requirement": "When an existing structure is converted to an ADU, the ADU may keep the setbacks of the existing structure.",
+      "applies_when": "Conversion of an existing structure with no added floor area",
+      "required_level": "conditional",
+      "source": {
+        "file": "IB_400.pdf",
+        "page": 5,
+        "quote": "Where an existing structure is converted to an ADU, the ADU may continue to observe the setbacks"
+      },
+      "confidence": "high",
+      "notes": "Adding floor area triggers different setback rules (same page)."
+    },
+    {
+      "id": "REQ-028",
+      "item": "Fire sprinklers in ADU",
+      "category": "information",
+      "requirement": "An ADU must have automatic fire sprinklers if the primary dwelling unit is protected by an automatic fire sprinkler system.",
+      "applies_when": "Primary dwelling unit has fire sprinklers",
+      "required_level": "conditional",
+      "source": {
+        "file": "IB_400.pdf",
+        "page": 8,
+        "quote": "An ADU shall be required to provide an automatic fire sprinkler system if it is"
+      },
+      "confidence": "high",
+      "notes": "IB 400 refers to Technical Bulletin RESD 3-4 (not provided). IB 140 p.8 points to IB 124."
+    },
+    {
+      "id": "REQ-029",
+      "item": "Garage conversion parking replacement",
+      "category": "information",
+      "requirement": "Converting a garage does not require replacing parking, except in the Coastal Overlay Zone within the Beach Impact Area of the Parking Impact Overlay Zone and outside a transit priority area.",
+      "applies_when": "Garage is converted to an ADU",
+      "required_level": "conditional",
+      "source": {
+        "file": "IB_400.pdf",
+        "page": 7,
+        "quote": "does not require the replacement of parking spaces"
+      },
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "id": "REQ-030",
+      "item": "Driveway curb closure",
+      "category": "information",
+      "requirement": "If the ADU makes an existing driveway curb noncompliant with City standards, the driveway must be closed to the City Engineer's satisfaction.",
+      "applies_when": "ADU construction makes existing driveway curb noncompliant",
+      "required_level": "conditional",
+      "source": {
+        "file": "IB_400.pdf",
+        "page": 7,
+        "quote": "the driveway shall be closed to the satisfaction of the City Engineer."
+      },
+      "confidence": "high",
+      "notes": "Plausible for garage conversions but IB 400 does not say what to submit."
+    },
+    {
+      "id": "REQ-031",
+      "item": "Refuse and recycling storage",
+      "category": "information",
+      "requirement": "ADU development is subject to refuse, organic waste and recycling storage regulations in SDMC 142.0801.",
+      "applies_when": "always, per IB 400",
+      "required_level": "required",
+      "source": {
+        "file": "IB_400.pdf",
+        "page": 7,
+        "quote": "ADU(s) development is subject to Refuse, Organic Waste, and Recycle Material"
+      },
+      "confidence": "medium",
+      "notes": "The document does not say whether a conversion must show an enclosure."
+    },
+    {
+      "id": "REQ-032",
+      "item": "Compliance with California Building Standards Code",
+      "category": "information",
+      "requirement": "ADUs must comply with all requirements of the California Building Standards Code, including fire separation distance and opening protection.",
+      "applies_when": "always",
+      "required_level": "required",
+      "source": {
+        "file": "IB_400.pdf",
+        "page": 7,
+        "quote": "ADUs must comply with all requirements in the California Building Standards Code"
+      },
+      "confidence": "high",
+      "notes": "The Code itself is not provided; requirements may increase setbacks."
+    },
+    {
+      "id": "REQ-033",
+      "item": "Urban Lot Split affidavit",
+      "category": "information",
+      "requirement": "If the project proposes an Urban Lot Split, a signed affidavit from the Record Owner is required.",
+      "applies_when": "Project proposes an Urban Lot Split (SB 9)",
+      "required_level": "conditional",
+      "source": {
+        "file": "IB_400.pdf",
+        "page": 3,
+        "quote": "a signed affidavit from the Record Owner will also be required"
+      },
+      "confidence": "high",
+      "notes": "Unlikely for a simple garage conversion."
+    },
+    {
+      "id": "REQ-034",
+      "item": "Site plan: scope of work",
+      "category": "plans",
+      "requirement": "Include a brief statement of the scope of work on the site plan.",
+      "applies_when": "always (site plan is required)",
+      "required_level": "required",
+      "source": {
+        "file": "IB_122.pdf",
+        "page": 2,
+        "quote": "A brief statement clearly describing the scope of work being proposed."
+      },
+      "confidence": "high",
+      "notes": "IB 122 says plans 'may require a site plan'; IB 140 and IB 400 say a site plan is required for this scenario."
+    },
+    {
+      "id": "REQ-035",
+      "item": "Site plan: property lines",
+      "category": "plans",
+      "requirement": "Show all property lines and site boundaries with dimensions.",
+      "applies_when": "always (site plan is required)",
+      "required_level": "required",
+      "source": {
+        "file": "IB_122.pdf",
+        "page": 2,
+        "quote": "Show all property lines/site boundaries, with dimensions."
+      },
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "id": "REQ-036",
+      "item": "Site plan: building and structure dimensions",
+      "category": "plans",
+      "requirement": "Show dimensions of all existing and proposed buildings and structures, including distances to property lines and between buildings.",
+      "applies_when": "always (site plan is required)",
+      "required_level": "required",
+      "source": {
+        "file": "IB_122.pdf",
+        "page": 2,
+        "quote": "Show dimensions of all existing and proposed buildings, additions and structures,"
+      },
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "id": "REQ-037",
+      "item": "Site plan: public right-of-way dimensions",
+      "category": "plans",
+      "requirement": "Show curb-to-property-line or street-centerline-to-property-line distance, and alley width and paving type if applicable.",
+      "applies_when": "always (alley part only if applicable)",
+      "required_level": "required",
+      "source": {
+        "file": "IB_122.pdf",
+        "page": 2,
+        "quote": "Curb to property line distance, or centerline of street to property line distance."
+      },
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "id": "REQ-038",
+      "item": "Site plan: public improvements",
+      "category": "plans",
+      "requirement": "Show all existing and proposed curb, sidewalk, pedestrian ramps and driveways.",
+      "applies_when": "always (site plan is required)",
+      "required_level": "required",
+      "source": {
+        "file": "IB_122.pdf",
+        "page": 2,
+        "quote": "All existing and proposed curb, sidewalk, pedestrian ramps, driveways, etc."
+      },
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "id": "REQ-039",
+      "item": "Site plan: easements",
+      "category": "plans",
+      "requirement": "Show dimensions and locations of all recorded and proposed public and private easements.",
+      "applies_when": "always (site plan is required)",
+      "required_level": "required",
+      "source": {
+        "file": "IB_122.pdf",
+        "page": 2,
+        "quote": "Dimensions and locations of all recorded and proposed public and private"
+      },
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "id": "REQ-040",
+      "item": "Title report",
+      "category": "information",
+      "requirement": "Obtaining a title report before site design and submitting it with the project is strongly recommended; it may be required during review.",
+      "applies_when": "always",
+      "required_level": "recommended",
+      "source": {
+        "file": "IB_122.pdf",
+        "page": 2,
+        "quote": "submitting it with the project is strongly recommended"
+      },
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "id": "REQ-041",
+      "item": "Site plan: property owner information",
+      "category": "plans",
+      "requirement": "Show the name, address and phone number of the property owner(s).",
+      "applies_when": "always (site plan is required)",
+      "required_level": "required",
+      "source": {
+        "file": "IB_122.pdf",
+        "page": 2,
+        "quote": "Name, address and phone number of the property owner"
+      },
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "id": "REQ-042",
+      "item": "Site plan: site address",
+      "category": "plans",
+      "requirement": "Show the addresses associated with the project site.",
+      "applies_when": "always (site plan is required)",
+      "required_level": "required",
+      "source": {
+        "file": "IB_122.pdf",
+        "page": 2,
+        "quote": "Addresses associated with the project site."
+      },
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "id": "REQ-043",
+      "item": "Site plan: legal description and APN",
+      "category": "plans",
+      "requirement": "Show the legal description and Assessor's Parcel Number.",
+      "applies_when": "always (site plan is required)",
+      "required_level": "required",
+      "source": {
+        "file": "IB_122.pdf",
+        "page": 2,
+        "quote": "Legal description and Assessor’s Parcel Number (APN)"
+      },
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "id": "REQ-044",
+      "item": "Site plan: north arrow",
+      "category": "plans",
+      "requirement": "Show a north arrow on the site plan.",
+      "applies_when": "always (site plan is required)",
+      "required_level": "required",
+      "source": {
+        "file": "IB_122.pdf",
+        "page": 2,
+        "quote": "J. North Arrow"
+      },
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "id": "REQ-045",
+      "item": "Site plan: drawing scale",
+      "category": "plans",
+      "requirement": "Show the drawing scale on the site plan.",
+      "applies_when": "always (site plan is required)",
+      "required_level": "required",
+      "source": {
+        "file": "IB_122.pdf",
+        "page": 2,
+        "quote": "K. Drawing Scale"
+      },
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "id": "REQ-046",
+      "item": "Site plan: brush management zones",
+      "category": "plans",
+      "requirement": "Show brush management zones on the site plan.",
+      "applies_when": "Property has brush management zones",
+      "required_level": "conditional",
+      "source": {
+        "file": "IB_122.pdf",
+        "page": 2,
+        "quote": "Brush Management Zones"
+      },
+      "confidence": "medium",
+      "notes": "The document lists this among site plan items with no stated condition; assumed to apply only where such zones exist."
+    },
+    {
+      "id": "REQ-047",
+      "item": "Vicinity map",
+      "category": "plans",
+      "requirement": "Provide a vicinity map showing at least two major cross streets and all other roadways leading to the site.",
+      "applies_when": "always",
+      "required_level": "required",
+      "source": {
+        "file": "IB_122.pdf",
+        "page": 3,
+        "quote": "Show at least two major cross streets and all other roadways leading to"
+      },
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "id": "REQ-048",
+      "item": "Vicinity map: north arrow",
+      "category": "plans",
+      "requirement": "Show a north arrow on the vicinity map.",
+      "applies_when": "always",
+      "required_level": "required",
+      "source": {
+        "file": "IB_122.pdf",
+        "page": 3,
+        "quote": "A north arrow is also required."
+      },
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "id": "REQ-049",
+      "item": "Surveyor signature and seal on site plan",
+      "category": "plans",
+      "requirement": "A site plan showing property lines, easements and fixed works must be sealed, signed and dated by a person authorized to practice land surveying.",
+      "applies_when": "Site plan shows property lines, easements and fixed works (see notes)",
+      "required_level": "conditional",
+      "source": {
+        "file": "IB_122.pdf",
+        "page": 4,
+        "quote": "shall be sealed, signed and dated by a person"
+      },
+      "confidence": "low",
+      "notes": "Unclear whether this applies to every residential site plan. IB 122 p.5 gives a topographic map and boundary survey option in lieu of the stamp. DSD should confirm."
+    },
+    {
+      "id": "REQ-050",
+      "item": "Project Contacts Information form DS-345",
+      "category": "forms",
+      "requirement": "Submit the Project Contacts Information Form, DS-345.",
+      "applies_when": "always",
+      "required_level": "required",
+      "source": {
+        "file": "IB_140.pdf",
+        "page": 1,
+        "quote": "must be submitted with all projects."
+      },
+      "confidence": "high",
+      "notes": "DS-345 'must be submitted with all projects' (IB 140 p.1). Not listed in IB 400."
+    },
+    {
+      "id": "REQ-051",
+      "item": "Owner-Builder Verification form DS-3042",
+      "category": "forms",
+      "requirement": "Submit the Owner-Builder Verification Form, DS-3042, if the owner acts as general contractor.",
+      "applies_when": "Property owner is acting as the general contractor",
+      "required_level": "conditional",
+      "source": {
+        "file": "IB_140.pdf",
+        "page": 2,
+        "quote": "is required if the property owner is acting as the general contractor."
+      },
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "id": "REQ-052",
+      "item": "Water Meter Data Card DS-16 (IB 140)",
+      "category": "forms",
+      "requirement": "Complete a Water Meter Data Card, DS-16, if new plumbing fixtures are added; not required when replacing or relocating existing fixtures.",
+      "applies_when": "New plumbing fixtures are added",
+      "required_level": "conditional",
+      "source": {
+        "file": "IB_140.pdf",
+        "page": 2,
+        "quote": "must be completed if new plumbing fixtures are being added."
+      },
+      "confidence": "low",
+      "notes": "CONFLICT: IB 400 p.16 lists DS-16 without a condition. The online form also asks about new plumbing fixtures (guide p.9)."
+    },
+    {
+      "id": "REQ-053",
+      "item": "Stormwater Requirements Applicability Checklist DS-560 (IB 140)",
+      "category": "forms",
+      "requirement": "Submit Form DS-560 with every plan submittal.",
+      "applies_when": "always",
+      "required_level": "required",
+      "source": {
+        "file": "IB_140.pdf",
+        "page": 2,
+        "quote": "is required for every plan submittal."
+      },
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "id": "REQ-054",
+      "item": "Plans drawn to scale and clear",
+      "category": "plans",
+      "requirement": "Plans must be drawn to scale and clear enough to show the location and extent of the proposed work.",
+      "applies_when": "always",
+      "required_level": "required",
+      "source": {
+        "file": "IB_140.pdf",
+        "page": 2,
+        "quote": "Plans must be drawn to scale and be of sufficient clarity"
+      },
+      "confidence": "high",
+      "notes": "IB 140 covers additions/remodels to single-family homes and duplexes not exceeding one story; it does not mention garage-to-ADU conversions, so applicability here is assumed, not stated. "
+    },
+    {
+      "id": "REQ-055",
+      "item": "Show existing and proposed construction",
+      "category": "plans",
+      "requirement": "Plans must clearly show existing and proposed construction and alterations to the existing home.",
+      "applies_when": "always",
+      "required_level": "required",
+      "source": {
+        "file": "IB_140.pdf",
+        "page": 2,
+        "quote": "Existing and proposed construction and alterations to the existing home"
+      },
+      "confidence": "medium",
+      "notes": "IB 140 covers additions/remodels to single-family homes and duplexes not exceeding one story; it does not mention garage-to-ADU conversions, so applicability here is assumed, not stated. "
+    },
+    {
+      "id": "REQ-056",
+      "item": "Plans conform to California Residential Code and local rules",
+      "category": "plans",
+      "requirement": "Plans must show that all work conforms to the current California Residential Code, the San Diego Municipal Code and other applicable laws.",
+      "applies_when": "always",
+      "required_level": "required",
+      "source": {
+        "file": "IB_140.pdf",
+        "page": 2,
+        "quote": "Plans must show that all work conforms to the provisions of the current edition"
+      },
+      "confidence": "high",
+      "notes": "IB 140 covers additions/remodels to single-family homes and duplexes not exceeding one story; it does not mention garage-to-ADU conversions, so applicability here is assumed, not stated. "
+    },
+    {
+      "id": "REQ-057",
+      "item": "Foundation plan and details",
+      "category": "plans",
+      "requirement": "Provide a foundation plan and details as applicable.",
+      "applies_when": "Work affects or adds foundation",
+      "required_level": "conditional",
+      "source": {
+        "file": "IB_140.pdf",
+        "page": 2,
+        "quote": "Foundation Plan and Details"
+      },
+      "confidence": "medium",
+      "notes": "IB 140 covers additions/remodels to single-family homes and duplexes not exceeding one story; it does not mention garage-to-ADU conversions, so applicability here is assumed, not stated. A garage conversion may reuse the existing slab; the document does not say."
+    },
+    {
+      "id": "REQ-058",
+      "item": "Foundation: footing size, depth and location",
+      "category": "plans",
+      "requirement": "Show size, depth and location of footings.",
+      "applies_when": "Work affects or adds foundation",
+      "required_level": "conditional",
+      "source": {
+        "file": "IB_140.pdf",
+        "page": 2,
+        "quote": "Size, depth, and location of footings."
+      },
+      "confidence": "medium",
+      "notes": "IB 140 covers additions/remodels to single-family homes and duplexes not exceeding one story; it does not mention garage-to-ADU conversions, so applicability here is assumed, not stated. "
+    },
+    {
+      "id": "REQ-059",
+      "item": "Foundation: rebar size and spacing",
+      "category": "plans",
+      "requirement": "Show rebar size and spacing.",
+      "applies_when": "Work affects or adds foundation",
+      "required_level": "conditional",
+      "source": {
+        "file": "IB_140.pdf",
+        "page": 2,
+        "quote": "Rebar size and spacing."
+      },
+      "confidence": "medium",
+      "notes": "IB 140 covers additions/remodels to single-family homes and duplexes not exceeding one story; it does not mention garage-to-ADU conversions, so applicability here is assumed, not stated. "
+    },
+    {
+      "id": "REQ-060",
+      "item": "Foundation: concrete strength",
+      "category": "plans",
+      "requirement": "Show concrete compressive strength (minimum 2500 psi).",
+      "applies_when": "Work affects or adds foundation",
+      "required_level": "conditional",
+      "source": {
+        "file": "IB_140.pdf",
+        "page": 2,
+        "quote": "Concrete compressive strength (minimum 2500 psi)."
+      },
+      "confidence": "medium",
+      "notes": "IB 140 covers additions/remodels to single-family homes and duplexes not exceeding one story; it does not mention garage-to-ADU conversions, so applicability here is assumed, not stated. "
+    },
+    {
+      "id": "REQ-061",
+      "item": "Foundation: slab thickness",
+      "category": "plans",
+      "requirement": "Show concrete slab thickness (minimum 3.5 inches).",
+      "applies_when": "Work affects or adds foundation",
+      "required_level": "conditional",
+      "source": {
+        "file": "IB_140.pdf",
+        "page": 2,
+        "quote": "Concrete slab thickness (min. 3.5 inches)."
+      },
+      "confidence": "medium",
+      "notes": "IB 140 covers additions/remodels to single-family homes and duplexes not exceeding one story; it does not mention garage-to-ADU conversions, so applicability here is assumed, not stated. "
+    },
+    {
+      "id": "REQ-062",
+      "item": "Raised floor construction details",
+      "category": "plans",
+      "requirement": "For raised floor construction, show foundations, pier footings, stem dimension, joist sizes and spacing, and crawl space access and vents.",
+      "applies_when": "Raised floor construction",
+      "required_level": "conditional",
+      "source": {
+        "file": "IB_140.pdf",
+        "page": 2,
+        "quote": "Location of continuous foundations and pier footings."
+      },
+      "confidence": "medium",
+      "notes": "IB 140 covers additions/remodels to single-family homes and duplexes not exceeding one story; it does not mention garage-to-ADU conversions, so applicability here is assumed, not stated. This item covers a list of six sub-details on pp.2-3."
+    },
+    {
+      "id": "REQ-063",
+      "item": "Floor plan: use and dimensions of rooms",
+      "category": "plans",
+      "requirement": "Show the use and dimensions of all existing and proposed rooms.",
+      "applies_when": "always",
+      "required_level": "required",
+      "source": {
+        "file": "IB_140.pdf",
+        "page": 3,
+        "quote": "Identify use and dimensions of all existing and proposed rooms."
+      },
+      "confidence": "high",
+      "notes": "IB 140 covers additions/remodels to single-family homes and duplexes not exceeding one story; it does not mention garage-to-ADU conversions, so applicability here is assumed, not stated. "
+    },
+    {
+      "id": "REQ-064",
+      "item": "Floor plan: windows and doors",
+      "category": "plans",
+      "requirement": "Show the size and type of windows and doors.",
+      "applies_when": "always",
+      "required_level": "required",
+      "source": {
+        "file": "IB_140.pdf",
+        "page": 3,
+        "quote": "Size and types of windows and doors."
+      },
+      "confidence": "high",
+      "notes": "IB 140 covers additions/remodels to single-family homes and duplexes not exceeding one story; it does not mention garage-to-ADU conversions, so applicability here is assumed, not stated. "
+    },
+    {
+      "id": "REQ-065",
+      "item": "Floor plan: plumbing fixtures",
+      "category": "plans",
+      "requirement": "Show the location and type of all plumbing fixtures.",
+      "applies_when": "always",
+      "required_level": "required",
+      "source": {
+        "file": "IB_140.pdf",
+        "page": 3,
+        "quote": "Location and type of all plumbing fixtures."
+      },
+      "confidence": "high",
+      "notes": "IB 140 covers additions/remodels to single-family homes and duplexes not exceeding one story; it does not mention garage-to-ADU conversions, so applicability here is assumed, not stated. "
+    },
+    {
+      "id": "REQ-066",
+      "item": "Floor plan: heating equipment",
+      "category": "plans",
+      "requirement": "Show the location and energy output (BTUs) of all heating equipment.",
+      "applies_when": "always",
+      "required_level": "required",
+      "source": {
+        "file": "IB_140.pdf",
+        "page": 3,
+        "quote": "Location and energy output (BTUs) of all heating equipment."
+      },
+      "confidence": "high",
+      "notes": "IB 140 covers additions/remodels to single-family homes and duplexes not exceeding one story; it does not mention garage-to-ADU conversions, so applicability here is assumed, not stated. "
+    },
+    {
+      "id": "REQ-067",
+      "item": "Floor plan: bathroom exhaust fans",
+      "category": "plans",
+      "requirement": "Show the location and type of bathroom exhaust fans.",
+      "applies_when": "Project includes a bathroom",
+      "required_level": "conditional",
+      "source": {
+        "file": "IB_140.pdf",
+        "page": 3,
+        "quote": "Location and type of bathroom exhaust fan(s)."
+      },
+      "confidence": "medium",
+      "notes": "IB 140 covers additions/remodels to single-family homes and duplexes not exceeding one story; it does not mention garage-to-ADU conversions, so applicability here is assumed, not stated. "
+    },
+    {
+      "id": "REQ-068",
+      "item": "Floor plan: smoke and carbon monoxide alarms",
+      "category": "plans",
+      "requirement": "Show the location and type of smoke and carbon monoxide alarms.",
+      "applies_when": "always",
+      "required_level": "required",
+      "source": {
+        "file": "IB_140.pdf",
+        "page": 3,
+        "quote": "Location and type of smoke and carbon monoxide alarms"
+      },
+      "confidence": "high",
+      "notes": "IB 140 covers additions/remodels to single-family homes and duplexes not exceeding one story; it does not mention garage-to-ADU conversions, so applicability here is assumed, not stated. "
+    },
+    {
+      "id": "REQ-069",
+      "item": "Floor plan: attic access",
+      "category": "plans",
+      "requirement": "Show the attic access location.",
+      "applies_when": "always",
+      "required_level": "required",
+      "source": {
+        "file": "IB_140.pdf",
+        "page": 3,
+        "quote": "Attic access location."
+      },
+      "confidence": "medium",
+      "notes": "IB 140 covers additions/remodels to single-family homes and duplexes not exceeding one story; it does not mention garage-to-ADU conversions, so applicability here is assumed, not stated. "
+    },
+    {
+      "id": "REQ-070",
+      "item": "Roof framing: existing roof framing impacted",
+      "category": "plans",
+      "requirement": "Show size, spacing and span between supports for existing roof framing impacted by the alteration.",
+      "applies_when": "Roof framing is altered",
+      "required_level": "conditional",
+      "source": {
+        "file": "IB_140.pdf",
+        "page": 3,
+        "quote": "Size, spacing and span between supports for the existing roof framing"
+      },
+      "confidence": "medium",
+      "notes": "IB 140 covers additions/remodels to single-family homes and duplexes not exceeding one story; it does not mention garage-to-ADU conversions, so applicability here is assumed, not stated. "
+    },
+    {
+      "id": "REQ-071",
+      "item": "Roof framing: new rafters and ceiling joists",
+      "category": "plans",
+      "requirement": "Show the size and spacing of all new rafters and ceiling joists.",
+      "applies_when": "New roof framing",
+      "required_level": "conditional",
+      "source": {
+        "file": "IB_140.pdf",
+        "page": 3,
+        "quote": "Size and spacing of all new rafters and ceiling joists"
+      },
+      "confidence": "medium",
+      "notes": "IB 140 covers additions/remodels to single-family homes and duplexes not exceeding one story; it does not mention garage-to-ADU conversions, so applicability here is assumed, not stated. "
+    },
+    {
+      "id": "REQ-072",
+      "item": "Roof framing: headers and trimmer studs",
+      "category": "plans",
+      "requirement": "Show the size of headers above wall openings and the number of trimmer studs.",
+      "applies_when": "New wall openings",
+      "required_level": "conditional",
+      "source": {
+        "file": "IB_140.pdf",
+        "page": 3,
+        "quote": "Size of headers above wall openings and number of trimmer studs"
+      },
+      "confidence": "medium",
+      "notes": "IB 140 covers additions/remodels to single-family homes and duplexes not exceeding one story; it does not mention garage-to-ADU conversions, so applicability here is assumed, not stated. "
+    },
+    {
+      "id": "REQ-073",
+      "item": "Roof framing: roof openings",
+      "category": "plans",
+      "requirement": "Show special framing around roof openings such as skylights and chimneys.",
+      "applies_when": "Roof openings are added",
+      "required_level": "conditional",
+      "source": {
+        "file": "IB_140.pdf",
+        "page": 3,
+        "quote": "Special framing around roof openings such as skylights and chimneys."
+      },
+      "confidence": "medium",
+      "notes": "IB 140 covers additions/remodels to single-family homes and duplexes not exceeding one story; it does not mention garage-to-ADU conversions, so applicability here is assumed, not stated. "
+    },
+    {
+      "id": "REQ-074",
+      "item": "Roof framing: rafter tie nails",
+      "category": "plans",
+      "requirement": "Show the size and number of nails for the rafter tie connection.",
+      "applies_when": "New rafters",
+      "required_level": "conditional",
+      "source": {
+        "file": "IB_140.pdf",
+        "page": 3,
+        "quote": "Size and number of nails for rafter tie connection"
+      },
+      "confidence": "medium",
+      "notes": "IB 140 covers additions/remodels to single-family homes and duplexes not exceeding one story; it does not mention garage-to-ADU conversions, so applicability here is assumed, not stated. "
+    },
+    {
+      "id": "REQ-075",
+      "item": "Wall bracing and shear panels",
+      "category": "plans",
+      "requirement": "Show wall bracing, shear panels or other means of obtaining required lateral bracing.",
+      "applies_when": "Walls are altered or added",
+      "required_level": "conditional",
+      "source": {
+        "file": "IB_140.pdf",
+        "page": 3,
+        "quote": "Wall bracing, shear panels or other means of obtaining required lateral"
+      },
+      "confidence": "medium",
+      "notes": "IB 140 covers additions/remodels to single-family homes and duplexes not exceeding one story; it does not mention garage-to-ADU conversions, so applicability here is assumed, not stated. A garage conversion often replaces the garage door opening with walls, but IB 140 does not say so."
+    },
+    {
+      "id": "REQ-076",
+      "item": "Exterior elevations: walls and finishes",
+      "category": "plans",
+      "requirement": "Show each exterior wall from the outside, with the exterior finish of walls and roof.",
+      "applies_when": "always",
+      "required_level": "required",
+      "source": {
+        "file": "IB_140.pdf",
+        "page": 3,
+        "quote": "Each exterior wall shown from the outside of the building and exterior"
+      },
+      "confidence": "high",
+      "notes": "IB 140 covers additions/remodels to single-family homes and duplexes not exceeding one story; it does not mention garage-to-ADU conversions, so applicability here is assumed, not stated. "
+    },
+    {
+      "id": "REQ-077",
+      "item": "Exterior elevations: doors, windows and openings",
+      "category": "plans",
+      "requirement": "Show doors, windows and other openings on the elevations.",
+      "applies_when": "always",
+      "required_level": "required",
+      "source": {
+        "file": "IB_140.pdf",
+        "page": 3,
+        "quote": "Doors, windows and other openings."
+      },
+      "confidence": "high",
+      "notes": "IB 140 covers additions/remodels to single-family homes and duplexes not exceeding one story; it does not mention garage-to-ADU conversions, so applicability here is assumed, not stated. "
+    },
+    {
+      "id": "REQ-078",
+      "item": "Exterior elevations: grade and building height",
+      "category": "plans",
+      "requirement": "Show pre-existing and finished grade and building height to the most restrictive grade.",
+      "applies_when": "always",
+      "required_level": "required",
+      "source": {
+        "file": "IB_140.pdf",
+        "page": 3,
+        "quote": "Pre-existing and finished grade and building height to the most restrictive"
+      },
+      "confidence": "high",
+      "notes": "IB 140 covers additions/remodels to single-family homes and duplexes not exceeding one story; it does not mention garage-to-ADU conversions, so applicability here is assumed, not stated. "
+    },
+    {
+      "id": "REQ-079",
+      "item": "Roof covering Class A",
+      "category": "plans",
+      "requirement": "Roof covering must be minimum Class A.",
+      "applies_when": "Roof covering is installed or replaced",
+      "required_level": "conditional",
+      "source": {
+        "file": "IB_140.pdf",
+        "page": 3,
+        "quote": "Roof covering must be minimum Class"
+      },
+      "confidence": "medium",
+      "notes": "IB 140 covers additions/remodels to single-family homes and duplexes not exceeding one story; it does not mention garage-to-ADU conversions, so applicability here is assumed, not stated. IB 123 covers roof renewal (not provided)."
+    },
+    {
+      "id": "REQ-080",
+      "item": "Connection details",
+      "category": "plans",
+      "requirement": "Show details explaining the method of construction and means of connection, referenced on the framing and foundation plans.",
+      "applies_when": "always",
+      "required_level": "required",
+      "source": {
+        "file": "IB_140.pdf",
+        "page": 3,
+        "quote": "Sufficient details must be shown to clearly explain the method of construction"
+      },
+      "confidence": "high",
+      "notes": "IB 140 covers additions/remodels to single-family homes and duplexes not exceeding one story; it does not mention garage-to-ADU conversions, so applicability here is assumed, not stated. "
+    },
+    {
+      "id": "REQ-081",
+      "item": "Truss calculations",
+      "category": "plans",
+      "requirement": "If prefabricated trusses are used, provide truss calculations stamped by a California-licensed architect or registered civil engineer.",
+      "applies_when": "Prefabricated trusses are part of the roof framing",
+      "required_level": "conditional",
+      "source": {
+        "file": "IB_140.pdf",
+        "page": 4,
+        "quote": "truss calculations stamped by a professional architect or registered civil engineer"
+      },
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "id": "REQ-082",
+      "item": "Geotechnical investigation report",
+      "category": "plans",
+      "requirement": "A geotechnical investigation report is required for foundations on fill or expansive soil.",
+      "applies_when": "Foundations placed on fill or expansive soil",
+      "required_level": "conditional",
+      "source": {
+        "file": "IB_140.pdf",
+        "page": 4,
+        "quote": "A geotechnical investigation report must be provided for foundations placed"
+      },
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "id": "REQ-083",
+      "item": "Undisturbed native soil note on plans",
+      "category": "plans",
+      "requirement": "When foundations are on undisturbed native soil, add the note that the structure is on undisturbed native soil, signed by owner or licensed engineer or architect.",
+      "applies_when": "Foundations placed on undisturbed native soil",
+      "required_level": "conditional",
+      "source": {
+        "file": "IB_140.pdf",
+        "page": 4,
+        "quote": "The structure(s) will be located entirely on undisturbed native soil."
+      },
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "id": "REQ-084",
+      "item": "Statement of special inspection",
+      "category": "plans",
+      "requirement": "Specify on the plans that special inspection is required when epoxy or expansion anchors are used, and add the listed notes.",
+      "applies_when": "Epoxy or expansion anchors are used",
+      "required_level": "conditional",
+      "source": {
+        "file": "IB_140.pdf",
+        "page": 4,
+        "quote": "Specify on plans that special inspection is required when epoxy or expansion"
+      },
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "id": "REQ-085",
+      "item": "Very High Fire Hazard Severity Zone construction",
+      "category": "information",
+      "requirement": "Additions or alterations in a VHFHSZ must meet CRC Section R337 as amended by SDMC 55.9401.",
+      "applies_when": "Property in VHFHSZ and existing building application deemed complete on or after 8/27/2009",
+      "required_level": "conditional",
+      "source": {
+        "file": "IB_140.pdf",
+        "page": 5,
+        "quote": "shall comply with the"
+      },
+      "confidence": "medium",
+      "notes": "Quote is short because the sentence spans lines; see page for full text."
+    },
+    {
+      "id": "REQ-086",
+      "item": "Brush management zone compliance",
+      "category": "information",
+      "requirement": "Additions located in or encroaching on Brush Management Zones must comply with SDMC 142.0412.",
+      "applies_when": "Work in or encroaching on Brush Management Zone",
+      "required_level": "conditional",
+      "source": {
+        "file": "IB_140.pdf",
+        "page": 5,
+        "quote": "When the addition is encroaching or located within Brush Management Zones"
+      },
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "id": "REQ-087",
+      "item": "Construction BMP notes",
+      "category": "plans",
+      "requirement": "Put construction BMP general notes on every plan set with ground disturbance of less than 1,000 square feet.",
+      "applies_when": "Ground disturbance under 1,000 sq ft",
+      "required_level": "conditional",
+      "source": {
+        "file": "IB_140.pdf",
+        "page": 5,
+        "quote": "BMP notes are required on every plan set with a proposed ground disturbance"
+      },
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "id": "REQ-088",
+      "item": "Water Pollution Control Plan",
+      "category": "plans",
+      "requirement": "A WPCP is required for ground disturbance of 1,000 sq ft or more but under 1 acre, with a separate plan sheet.",
+      "applies_when": "Ground disturbance 1,000 sq ft to under 1 acre",
+      "required_level": "conditional",
+      "source": {
+        "file": "IB_140.pdf",
+        "page": 6,
+        "quote": "A WPCP is required for any project which has a ground disturbance that"
+      },
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "id": "REQ-089",
+      "item": "Minor WPCP form DS-570",
+      "category": "forms",
+      "requirement": "A Minor WPCP (DS-570) may replace a full WPCP for 1,000-4,999 sq ft disturbance with under 5 ft elevation difference; scan it into the plan set with DS-560.",
+      "applies_when": "Disturbance 1,000-4,999 sq ft and under 5-foot elevation differential",
+      "required_level": "conditional",
+      "source": {
+        "file": "IB_140.pdf",
+        "page": 6,
+        "quote": "may be utilized in lieu of a full WPCP"
+      },
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "id": "REQ-090",
+      "item": "California Energy Code (Title 24, Part 6) compliance",
+      "category": "information",
+      "requirement": "Single dwelling additions or alterations must comply with the California Energy Code, Title 24, Part 6.",
+      "applies_when": "always",
+      "required_level": "required",
+      "source": {
+        "file": "IB_140.pdf",
+        "page": 6,
+        "quote": "must comply with the California Energy Code (CEC), Title 24, Part 6"
+      },
+      "confidence": "high",
+      "notes": "IB 140 says compliance methods are in the Residential Manual (not provided)."
+    },
+    {
+      "id": "REQ-091",
+      "item": "Energy forms MF-1R and CF-1R on plans",
+      "category": "forms",
+      "requirement": "Forms (MF-1R Mandatory Measures and CF-1R Certificate of Compliance) must be shown on the plans; stapling is not permitted.",
+      "applies_when": "always (Title 24 compliance)",
+      "required_level": "required",
+      "source": {
+        "file": "IB_140.pdf",
+        "page": 6,
+        "quote": "Forms must be shown on the plans and stapling is not permitted."
+      },
+      "confidence": "medium",
+      "notes": "IB 140 says you 'may complete' CF-1R using Table 9 (simplest method), so CF-1R may be optional depending on method. Table 9 is based on Climate Zone 7; parts of San Diego are in Zone 10."
+    },
+    {
+      "id": "REQ-092",
+      "item": "Fenestration labels and U-factor on plans",
+      "category": "plans",
+      "requirement": "Windows and glazing must be labeled with certified U-factor, SHGC and infiltration; rough opening and U-factor of all windows and doors with glass must be noted on plans.",
+      "applies_when": "Windows or glazed doors are added or replaced",
+      "required_level": "conditional",
+      "source": {
+        "file": "IB_140.pdf",
+        "page": 6,
+        "quote": "must also be noted on the plans"
+      },
+      "confidence": "medium",
+      "notes": "Quote is short because the sentence spans lines."
+    },
+    {
+      "id": "REQ-093",
+      "item": "High efficacy luminaires",
+      "category": "information",
+      "requirement": "All luminaires installed in residential construction must qualify as high efficacy luminaires.",
+      "applies_when": "New lighting is installed",
+      "required_level": "conditional",
+      "source": {
+        "file": "IB_140.pdf",
+        "page": 6,
+        "quote": "must qualify as “high efficacy luminaires”"
+      },
+      "confidence": "medium",
+      "notes": ""
+    },
+    {
+      "id": "REQ-094",
+      "item": "Plumbing: piping material noted on plans",
+      "category": "plans",
+      "requirement": "Note the piping material on the plans; all new plumbing fixtures must comply with the California Plumbing Code and CALGreen.",
+      "applies_when": "Plumbing is added or altered",
+      "required_level": "conditional",
+      "source": {
+        "file": "IB_140.pdf",
+        "page": 7,
+        "quote": "Piping material must also be noted on the plans."
+      },
+      "confidence": "high",
+      "notes": "IB 140 covers additions/remodels to single-family homes and duplexes not exceeding one story; it does not mention garage-to-ADU conversions, so applicability here is assumed, not stated. "
+    },
+    {
+      "id": "REQ-095",
+      "item": "Historical review: designated resource",
+      "category": "process",
+      "requirement": "Plans must be submitted for Historical Review if the parcel has a designated historical resource or is in a historic district.",
+      "applies_when": "Parcel contains a designated historical resource or is in a historic district",
+      "required_level": "conditional",
+      "source": {
+        "file": "IB_140.pdf",
+        "page": 7,
+        "quote": "plans will be required and shall be submitted for Historical Review."
+      },
+      "confidence": "high",
+      "notes": "IB 581 not provided."
+    },
+    {
+      "id": "REQ-096",
+      "item": "Historical review: potential resource (45+ years)",
+      "category": "process",
+      "requirement": "If the site has buildings 45 years or older and the scope includes exterior work, plans and information must be submitted for Historical Review.",
+      "applies_when": "Buildings 45+ years old and exterior work (except in-kind roof repair/replacement)",
+      "required_level": "conditional",
+      "source": {
+        "file": "IB_140.pdf",
+        "page": 7,
+        "quote": "If the site contains buildings or structures 45 years old or older"
+      },
+      "confidence": "high",
+      "notes": "IB 580 not provided. A garage conversion normally involves exterior work, but IB 140 does not say so."
+    },
+    {
+      "id": "REQ-097",
+      "item": "Fire sprinkler requirements (IB 124)",
+      "category": "information",
+      "requirement": "For fire sprinkler requirements, refer to Information Bulletin 124.",
+      "applies_when": "Fire sprinklers may be required",
+      "required_level": "conditional",
+      "source": {
+        "file": "IB_140.pdf",
+        "page": 8,
+        "quote": "refer to Information Bulletin 124"
+      },
+      "confidence": "medium",
+      "notes": "IB 124 not provided. See also IB 400 p.8."
+    },
+    {
+      "id": "REQ-098",
+      "item": "Submit electronically by selecting Building Permit",
+      "category": "process",
+      "requirement": "Residential addition/remodel plans must be submitted electronically through the online portal by selecting Building Permit.",
+      "applies_when": "always",
+      "required_level": "required",
+      "source": {
+        "file": "IB_140.pdf",
+        "page": 8,
+        "quote": "must be submitted electronically through the online portal"
+      },
+      "confidence": "medium",
+      "notes": "CONFLICT/NUANCE: IB 140 says select 'Building Permit'; the 2023 guide (p.8) says select 'Combination Building Permit' for a single family dwelling or duplex."
+    },
+    {
+      "id": "REQ-099",
+      "item": "Plan check fees paid before review",
+      "category": "fees",
+      "requirement": "Plan check fees must be paid before review.",
+      "applies_when": "always",
+      "required_level": "required",
+      "source": {
+        "file": "IB_140.pdf",
+        "page": 8,
+        "quote": "The plan check fees are required to be paid prior to review."
+      },
+      "confidence": "high",
+      "notes": "The guide (p.24) describes paying an invoice after DSD pre-screen."
+    },
+    {
+      "id": "REQ-100",
+      "item": "Plan check and administrative fees non-refundable",
+      "category": "fees",
+      "requirement": "Plan check fees and other administrative fees are non-refundable.",
+      "applies_when": "always",
+      "required_level": "required",
+      "source": {
+        "file": "IB_140.pdf",
+        "page": 8,
+        "quote": "plan check fees and other administrative fees are non-refundable"
+      },
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "id": "REQ-101",
+      "item": "Log into online permitting account",
+      "category": "process",
+      "requirement": "Log into the online permitting account to start an application.",
+      "applies_when": "always",
+      "required_level": "required",
+      "source": {
+        "file": "building_permit_guide.pdf",
+        "page": 4,
+        "quote": "Log into your online"
+      },
+      "confidence": "medium",
+      "notes": "Guide is dated Rev. 3/14/2023 (cover page shows 8/19/2021) and may be outdated compared with the 2026 bulletins. "
+    },
+    {
+      "id": "REQ-102",
+      "item": "Review documents for completeness",
+      "category": "process",
+      "requirement": "DSD reviews new applications for completeness, assesses permit fees and assigns a reviewer.",
+      "applies_when": "always",
+      "required_level": "required",
+      "source": {
+        "file": "building_permit_guide.pdf",
+        "page": 2,
+        "quote": "DSD will review the documents for completeness, assess"
+      },
+      "confidence": "high",
+      "notes": "Guide is dated Rev. 3/14/2023 (cover page shows 8/19/2021) and may be outdated compared with the 2026 bulletins. "
+    },
+    {
+      "id": "REQ-103",
+      "item": "Resubmit for all disciplines at once",
+      "category": "process",
+      "requirement": "Resubmittals are for all disciplines at the same time; all cycle issues must be addressed before resubmitting.",
+      "applies_when": "after review comments (cycle issues)",
+      "required_level": "required",
+      "source": {
+        "file": "building_permit_guide.pdf",
+        "page": 2,
+        "quote": "Applicants must address all cycle issues prior to resubmitting any new plans."
+      },
+      "confidence": "high",
+      "notes": "Guide is dated Rev. 3/14/2023 (cover page shows 8/19/2021) and may be outdated compared with the 2026 bulletins. "
+    },
+    {
+      "id": "REQ-104",
+      "item": "Address or parcel number",
+      "category": "form_question",
+      "requirement": "Enter the street number and name, or the parcel number (###-###-####); the system fills in the other.",
+      "applies_when": "always",
+      "required_level": "required",
+      "source": {
+        "file": "building_permit_guide.pdf",
+        "page": 6,
+        "quote": "Enter Street No. and Street name only (the system will populate the parcel info)"
+      },
+      "confidence": "high",
+      "notes": "Guide is dated Rev. 3/14/2023 (cover page shows 8/19/2021) and may be outdated compared with the 2026 bulletins. "
+    },
+    {
+      "id": "REQ-105",
+      "item": "Additional parcels or addresses",
+      "category": "form_question",
+      "requirement": "Enter any additional parcels or addresses that apply to the project, including unit or suite number.",
+      "applies_when": "Project involves more than one parcel or address",
+      "required_level": "conditional",
+      "source": {
+        "file": "building_permit_guide.pdf",
+        "page": 7,
+        "quote": "Enter any additional parcels or addresses, if it applies to"
+      },
+      "confidence": "high",
+      "notes": "Guide is dated Rev. 3/14/2023 (cover page shows 8/19/2021) and may be outdated compared with the 2026 bulletins. "
+    },
+    {
+      "id": "REQ-106",
+      "item": "Code enforcement case question",
+      "category": "form_question",
+      "requirement": "Answer whether there is a code enforcement case; if yes, answer additional questions.",
+      "applies_when": "always",
+      "required_level": "required",
+      "source": {
+        "file": "building_permit_guide.pdf",
+        "page": 7,
+        "quote": "Answer the Code enforcement Case"
+      },
+      "confidence": "high",
+      "notes": "Guide is dated Rev. 3/14/2023 (cover page shows 8/19/2021) and may be outdated compared with the 2026 bulletins. The additional questions shown are not legible in text (screenshot)."
+    },
+    {
+      "id": "REQ-107",
+      "item": "Project scope",
+      "category": "form_question",
+      "requirement": "Provide the project scope.",
+      "applies_when": "always",
+      "required_level": "required",
+      "source": {
+        "file": "building_permit_guide.pdf",
+        "page": 7,
+        "quote": "Provide the following:"
+      },
+      "confidence": "medium",
+      "notes": "Guide is dated Rev. 3/14/2023 (cover page shows 8/19/2021) and may be outdated compared with the 2026 bulletins. The list on p.7 includes scope, processing timeline, applicant type."
+    },
+    {
+      "id": "REQ-108",
+      "item": "Processing timeline",
+      "category": "form_question",
+      "requirement": "Provide the processing timeline.",
+      "applies_when": "always",
+      "required_level": "required",
+      "source": {
+        "file": "building_permit_guide.pdf",
+        "page": 7,
+        "quote": "Processing timeline"
+      },
+      "confidence": "medium",
+      "notes": "Guide is dated Rev. 3/14/2023 (cover page shows 8/19/2021) and may be outdated compared with the 2026 bulletins. "
+    },
+    {
+      "id": "REQ-109",
+      "item": "Applicant type",
+      "category": "form_question",
+      "requirement": "Provide the applicant type.",
+      "applies_when": "always",
+      "required_level": "required",
+      "source": {
+        "file": "building_permit_guide.pdf",
+        "page": 7,
+        "quote": "Applicant type"
+      },
+      "confidence": "medium",
+      "notes": "Guide is dated Rev. 3/14/2023 (cover page shows 8/19/2021) and may be outdated compared with the 2026 bulletins. The screenshot (OCR) shows an option 'Authorized Agent of Property Owner or Other Person'."
+    },
+    {
+      "id": "REQ-110",
+      "item": "Associated building permit approval numbers",
+      "category": "form_question",
+      "requirement": "Provide associated building permit approval numbers; needed for Deferred Submittals.",
+      "applies_when": "Application is for a Deferred Submittal",
+      "required_level": "conditional",
+      "source": {
+        "file": "building_permit_guide.pdf",
+        "page": 7,
+        "quote": "Associated building permit approval numbers (this is"
+      },
+      "confidence": "high",
+      "notes": "Guide is dated Rev. 3/14/2023 (cover page shows 8/19/2021) and may be outdated compared with the 2026 bulletins. "
+    },
+    {
+      "id": "REQ-111",
+      "item": "No-Plan Permit question",
+      "category": "form_question",
+      "requirement": "Answer the No-Plan Permit question; answering Yes skips to the documents page.",
+      "applies_when": "always",
+      "required_level": "required",
+      "source": {
+        "file": "building_permit_guide.pdf",
+        "page": 8,
+        "quote": "Answer the No-Plan Permit"
+      },
+      "confidence": "high",
+      "notes": "Guide is dated Rev. 3/14/2023 (cover page shows 8/19/2021) and may be outdated compared with the 2026 bulletins. A garage-to-ADU conversion with plans would presumably answer No, but the guide does not say."
+    },
+    {
+      "id": "REQ-112",
+      "item": "Select Combination Building Permit",
+      "category": "form_question",
+      "requirement": "For a single family dwelling or duplex, select 'Combination Building Permit'; select 'Building Permit' for commercial or more than 3 residential units.",
+      "applies_when": "Not a No-Plan Permit",
+      "required_level": "required",
+      "source": {
+        "file": "building_permit_guide.pdf",
+        "page": 8,
+        "quote": "“Combination Building Permit” for"
+      },
+      "confidence": "medium",
+      "notes": "Guide is dated Rev. 3/14/2023 (cover page shows 8/19/2021) and may be outdated compared with the 2026 bulletins. IB 400 p.15 says the permit type depends on the number of units and cites IB 125 (not provided)."
+    },
+    {
+      "id": "REQ-113",
+      "item": "Related permits",
+      "category": "form_question",
+      "requirement": "Select the permits to associate with the Building Permit application, or select 'No additional permits'.",
+      "applies_when": "always",
+      "required_level": "required",
+      "source": {
+        "file": "building_permit_guide.pdf",
+        "page": 8,
+        "quote": "Select the permits you want associated with the Building Permit application"
+      },
+      "confidence": "high",
+      "notes": "Guide is dated Rev. 3/14/2023 (cover page shows 8/19/2021) and may be outdated compared with the 2026 bulletins. "
+    },
+    {
+      "id": "REQ-114",
+      "item": "Active Project Management question",
+      "category": "form_question",
+      "requirement": "Answer whether you are requesting Active Project Management.",
+      "applies_when": "always",
+      "required_level": "required",
+      "source": {
+        "file": "building_permit_guide.pdf",
+        "page": 9,
+        "quote": "Are you requesting Active Project Management:"
+      },
+      "confidence": "high",
+      "notes": "Guide is dated Rev. 3/14/2023 (cover page shows 8/19/2021) and may be outdated compared with the 2026 bulletins. "
+    },
+    {
+      "id": "REQ-115",
+      "item": "Select submittal type",
+      "category": "form_question",
+      "requirement": "Select the submittal type; for General submittal, select Building or Combination permit.",
+      "applies_when": "always",
+      "required_level": "required",
+      "source": {
+        "file": "building_permit_guide.pdf",
+        "page": 9,
+        "quote": "Select Submittal Type:"
+      },
+      "confidence": "medium",
+      "notes": "Guide is dated Rev. 3/14/2023 (cover page shows 8/19/2021) and may be outdated compared with the 2026 bulletins. The screenshot shows submittal types General, Rapid Review, Wireless Communication, Active Project Management. Which one fits a garage ADU is not stated."
+    },
+    {
+      "id": "REQ-116",
+      "item": "Rapid Review ADU question",
+      "category": "form_question",
+      "requirement": "The Rapid Review submittal asks whether the project is an Accessory Dwelling Unit, Junior Accessory Dwelling Unit, or Tiny Home.",
+      "applies_when": "Submittal type is Rapid Review",
+      "required_level": "conditional",
+      "source": {
+        "file": "building_permit_guide.pdf",
+        "page": 9,
+        "quote": "Accessory Dwelling Unit, Junior Accessory Dwelling Unit, or Tiny"
+      },
+      "confidence": "low",
+      "notes": "Guide is dated Rev. 3/14/2023 (cover page shows 8/19/2021) and may be outdated compared with the 2026 bulletins. Appears only under Rapid Review in the screenshot, while IB 400 does not mention Rapid Review. Unclear whether a garage-to-ADU should use Rapid Review."
+    },
+    {
+      "id": "REQ-117",
+      "item": "Form question: discretionary permit in process",
+      "category": "form_question",
+      "requirement": "Answer whether a discretionary permit is currently in process for the project.",
+      "applies_when": "always",
+      "required_level": "required",
+      "source": {
+        "file": "building_permit_guide.pdf",
+        "page": 9,
+        "quote": "Is there a Discretionary Permit currently in the process"
+      },
+      "confidence": "high",
+      "notes": "Guide is dated Rev. 3/14/2023 (cover page shows 8/19/2021) and may be outdated compared with the 2026 bulletins. "
+    },
+    {
+      "id": "REQ-118",
+      "item": "Form question: new plumbing fixtures",
+      "category": "form_question",
+      "requirement": "Answer whether the project includes new plumbing fixtures.",
+      "applies_when": "always",
+      "required_level": "required",
+      "source": {
+        "file": "building_permit_guide.pdf",
+        "page": 9,
+        "quote": "Will the project include new plumbing fixture(s)"
+      },
+      "confidence": "high",
+      "notes": "Guide is dated Rev. 3/14/2023 (cover page shows 8/19/2021) and may be outdated compared with the 2026 bulletins. Answer likely determines DS-16 (see IB 140 p.2)."
+    },
+    {
+      "id": "REQ-119",
+      "item": "Form question: structural calculations",
+      "category": "form_question",
+      "requirement": "Answer whether the project includes structural calculations.",
+      "applies_when": "always",
+      "required_level": "required",
+      "source": {
+        "file": "building_permit_guide.pdf",
+        "page": 9,
+        "quote": "Does the project include Structural Calculations:"
+      },
+      "confidence": "high",
+      "notes": "Guide is dated Rev. 3/14/2023 (cover page shows 8/19/2021) and may be outdated compared with the 2026 bulletins. "
+    },
+    {
+      "id": "REQ-120",
+      "item": "Form question: separate truss calculations",
+      "category": "form_question",
+      "requirement": "Answer whether the project includes separate truss calculations not in the plans.",
+      "applies_when": "always",
+      "required_level": "required",
+      "source": {
+        "file": "building_permit_guide.pdf",
+        "page": 9,
+        "quote": "Does the project include separate Truss Calculations that are not"
+      },
+      "confidence": "high",
+      "notes": "Guide is dated Rev. 3/14/2023 (cover page shows 8/19/2021) and may be outdated compared with the 2026 bulletins. "
+    },
+    {
+      "id": "REQ-121",
+      "item": "Form question: geotechnical investigation report",
+      "category": "form_question",
+      "requirement": "Answer whether the project includes a geotechnical investigation report.",
+      "applies_when": "always",
+      "required_level": "required",
+      "source": {
+        "file": "building_permit_guide.pdf",
+        "page": 9,
+        "quote": "Does the project include a Geotechnical Investigation Report:"
+      },
+      "confidence": "high",
+      "notes": "Guide is dated Rev. 3/14/2023 (cover page shows 8/19/2021) and may be outdated compared with the 2026 bulletins. "
+    },
+    {
+      "id": "REQ-122",
+      "item": "Form question: 10+ dwelling units",
+      "category": "form_question",
+      "requirement": "Answer whether the project proposes residential development of 10 or more dwelling units or a condominium conversion.",
+      "applies_when": "always",
+      "required_level": "required",
+      "source": {
+        "file": "building_permit_guide.pdf",
+        "page": 9,
+        "quote": "Is the project proposing residential development of 10 or more"
+      },
+      "confidence": "high",
+      "notes": "Guide is dated Rev. 3/14/2023 (cover page shows 8/19/2021) and may be outdated compared with the 2026 bulletins. "
+    },
+    {
+      "id": "REQ-123",
+      "item": "Form question: only residential use",
+      "category": "form_question",
+      "requirement": "Answer whether the project is only for residential use.",
+      "applies_when": "always",
+      "required_level": "required",
+      "source": {
+        "file": "building_permit_guide.pdf",
+        "page": 9,
+        "quote": "Is the project only for residential use:"
+      },
+      "confidence": "high",
+      "notes": "Guide is dated Rev. 3/14/2023 (cover page shows 8/19/2021) and may be outdated compared with the 2026 bulletins. "
+    },
+    {
+      "id": "REQ-124",
+      "item": "Form question: historic designation",
+      "category": "form_question",
+      "requirement": "Specify whether the project has a historic designation and answer related questions.",
+      "applies_when": "always",
+      "required_level": "required",
+      "source": {
+        "file": "building_permit_guide.pdf",
+        "page": 10,
+        "quote": "Specify whether the project has a historic"
+      },
+      "confidence": "high",
+      "notes": "Guide is dated Rev. 3/14/2023 (cover page shows 8/19/2021) and may be outdated compared with the 2026 bulletins. "
+    },
+    {
+      "id": "REQ-125",
+      "item": "Form question: affordable housing compliance",
+      "category": "form_question",
+      "requirement": "Indicate how the project complies with affordable housing requirements.",
+      "applies_when": "always",
+      "required_level": "required",
+      "source": {
+        "file": "building_permit_guide.pdf",
+        "page": 10,
+        "quote": "Indicate how the project complies with"
+      },
+      "confidence": "high",
+      "notes": "Guide is dated Rev. 3/14/2023 (cover page shows 8/19/2021) and may be outdated compared with the 2026 bulletins. "
+    },
+    {
+      "id": "REQ-126",
+      "item": "Form question: residential use types",
+      "category": "form_question",
+      "requirement": "Answer whether the project proposes Permanent Supportive Housing, Transitional Housing, Accessory Dwelling Units, Junior ADUs, or none.",
+      "applies_when": "always",
+      "required_level": "required",
+      "source": {
+        "file": "building_permit_guide.pdf",
+        "page": 10,
+        "quote": "Does the project propose any of the following residential use types?"
+      },
+      "confidence": "medium",
+      "notes": "Guide is dated Rev. 3/14/2023 (cover page shows 8/19/2021) and may be outdated compared with the 2026 bulletins. "
+    },
+    {
+      "id": "REQ-127",
+      "item": "Form question: incentive programs",
+      "category": "form_question",
+      "requirement": "Answer whether the project uses any incentive program (SB 35, density bonuses, Affordable ADU Bonus, etc.) or none.",
+      "applies_when": "always",
+      "required_level": "required",
+      "source": {
+        "file": "building_permit_guide.pdf",
+        "page": 10,
+        "quote": "Does the project propose using any of the following incentive programs?"
+      },
+      "confidence": "medium",
+      "notes": "Guide is dated Rev. 3/14/2023 (cover page shows 8/19/2021) and may be outdated compared with the 2026 bulletins. "
+    },
+    {
+      "id": "REQ-128",
+      "item": "Upload required documents",
+      "category": "form_question",
+      "requirement": "Upload all documents the portal lists as required; you cannot continue without them.",
+      "applies_when": "always",
+      "required_level": "required",
+      "source": {
+        "file": "building_permit_guide.pdf",
+        "page": 18,
+        "quote": "You will not be able to continue if"
+      },
+      "confidence": "high",
+      "notes": "Guide is dated Rev. 3/14/2023 (cover page shows 8/19/2021) and may be outdated compared with the 2026 bulletins. The document list is generated by the portal from earlier answers; the guide does not list the documents."
+    },
+    {
+      "id": "REQ-129",
+      "item": "Scout validation of uploaded files",
+      "category": "process",
+      "requirement": "If an upload fails Scout validation, use the Scout link and check your files.",
+      "applies_when": "If an upload fails validation",
+      "required_level": "conditional",
+      "source": {
+        "file": "building_permit_guide.pdf",
+        "page": 18,
+        "quote": "If you encounter Failed Scout Validation,"
+      },
+      "confidence": "high",
+      "notes": "Guide is dated Rev. 3/14/2023 (cover page shows 8/19/2021) and may be outdated compared with the 2026 bulletins. "
+    },
+    {
+      "id": "REQ-130",
+      "item": "Upload additional documents (optional)",
+      "category": "form_question",
+      "requirement": "You may upload additional documents with your submittal, choosing a file type and adding a brief description.",
+      "applies_when": "optional",
+      "required_level": "recommended",
+      "source": {
+        "file": "building_permit_guide.pdf",
+        "page": 18,
+        "quote": "Upload any Additional Documents"
+      },
+      "confidence": "high",
+      "notes": "Guide is dated Rev. 3/14/2023 (cover page shows 8/19/2021) and may be outdated compared with the 2026 bulletins. "
+    },
+    {
+      "id": "REQ-131",
+      "item": "Workers' compensation declaration",
+      "category": "form_question",
+      "requirement": "Select the workers' compensation insurance declaration statement that applies.",
+      "applies_when": "if applicable",
+      "required_level": "conditional",
+      "source": {
+        "file": "building_permit_guide.pdf",
+        "page": 19,
+        "quote": "Workers’ Compensation"
+      },
+      "confidence": "medium",
+      "notes": "Guide is dated Rev. 3/14/2023 (cover page shows 8/19/2021) and may be outdated compared with the 2026 bulletins. The declaration options are shown only in a screenshot."
+    },
+    {
+      "id": "REQ-132",
+      "item": "Review application and certify",
+      "category": "form_question",
+      "requirement": "Review the application and acknowledge the final certification before submitting.",
+      "applies_when": "always",
+      "required_level": "required",
+      "source": {
+        "file": "building_permit_guide.pdf",
+        "page": 21,
+        "quote": "Acknowledge the final"
+      },
+      "confidence": "high",
+      "notes": "Guide is dated Rev. 3/14/2023 (cover page shows 8/19/2021) and may be outdated compared with the 2026 bulletins. "
+    },
+    {
+      "id": "REQ-133",
+      "item": "Respond to Updates Required within 30 days",
+      "category": "process",
+      "requirement": "Requested information must be submitted within 30 days of the 'Updates Required' email or the application will be withdrawn.",
+      "applies_when": "If DSD sends an Updates Required email",
+      "required_level": "conditional",
+      "source": {
+        "file": "building_permit_guide.pdf",
+        "page": 22,
+        "quote": "within 30 days of this email or this application will be Withdrawn"
+      },
+      "confidence": "medium",
+      "notes": "Guide is dated Rev. 3/14/2023 (cover page shows 8/19/2021) and may be outdated compared with the 2026 bulletins. Text is in a screenshot only (OCR)."
+    },
+    {
+      "id": "REQ-134",
+      "item": "Sheet numbers in bottom right corner",
+      "category": "plans",
+      "requirement": "Place sheet numbers in the bottom right corner of plans.",
+      "applies_when": "always",
+      "required_level": "required",
+      "source": {
+        "file": "building_permit_guide.pdf",
+        "page": 57,
+        "quote": "Please make sure your sheet numbers are located in the bottom right corner"
+      },
+      "confidence": "high",
+      "notes": "Page 57 header shows Rev. 8/19/2021."
+    },
+    {
+      "id": "REQ-135",
+      "item": "Maximum upload file size 200MB",
+      "category": "information",
+      "requirement": "Each uploaded file must not exceed 200MB.",
+      "applies_when": "always",
+      "required_level": "required",
+      "source": {
+        "file": "building_permit_guide.pdf",
+        "page": 57,
+        "quote": "cannot exceed 200MB"
+      },
+      "confidence": "high",
+      "notes": "Page 57 header shows Rev. 8/19/2021."
+    },
+    {
+      "id": "REQ-136",
+      "item": "Plan page size 11x17 to 36x48",
+      "category": "plans",
+      "requirement": "Plans must be at least 11 by 17 inches and at most 36 by 48 inches; 8.5 by 11 is allowed only for DSD fillable documents and required reports.",
+      "applies_when": "always",
+      "required_level": "required",
+      "source": {
+        "file": "building_permit_guide.pdf",
+        "page": 57,
+        "quote": "plans must be at minimum 11- by 17-inches and a maximum of 36- by 48-inches"
+      },
+      "confidence": "high",
+      "notes": "Page 57 header shows Rev. 8/19/2021."
+    },
+    {
+      "id": "REQ-137",
+      "item": "No password protection on PDFs",
+      "category": "information",
+      "requirement": "Uploaded files must not be password protected.",
+      "applies_when": "always",
+      "required_level": "required",
+      "source": {
+        "file": "building_permit_guide.pdf",
+        "page": 57,
+        "quote": "Files must not be password protected."
+      },
+      "confidence": "high",
+      "notes": "Page 57 header shows Rev. 8/19/2021."
+    },
+    {
+      "id": "REQ-138",
+      "item": "Flatten PDF annotations",
+      "category": "information",
+      "requirement": "Annotations and comments in PDFs should be removed, for example by printing to PDF.",
+      "applies_when": "always",
+      "required_level": "recommended",
+      "source": {
+        "file": "building_permit_guide.pdf",
+        "page": 57,
+        "quote": "To remove annotations in a PDF, use the print to PDF option."
+      },
+      "confidence": "medium",
+      "notes": "Guide gives this as a 'FIX' for annotations; unclear whether files are rejected."
+    },
+    {
+      "id": "REQ-139",
+      "item": "Inspection scheduling requires online account",
+      "category": "process",
+      "requirement": "The contact listed on Form DS-345 must have an online permitting account (ACA) to schedule inspections.",
+      "applies_when": "after permit issuance",
+      "required_level": "conditional",
+      "source": {
+        "file": "building_permit_guide.pdf",
+        "page": 33,
+        "quote": "must have an ACA"
+      },
+      "confidence": "medium",
+      "notes": "Guide is dated Rev. 3/14/2023 (cover page shows 8/19/2021) and may be outdated compared with the 2026 bulletins. Text is in a screenshot caption; page number per PDF viewer."
+    }
+  ],
+  "not_found": [
+    {
+      "expected_item": "List of documents the online portal will require for this scenario",
+      "why_expected": "Guide p.18 says 'Required documents will be listed' after the form questions, but no document lists them."
+    },
+    {
+      "expected_item": "Fee amounts for a garage-to-ADU permit",
+      "why_expected": "IB 400 and IB 140 name fees but point to IB 501, which was not provided."
+    },
+    {
+      "expected_item": "Garage-conversion-specific plan requirements (e.g. existing garage slab, wall infill where the garage door was, ceiling height)",
+      "why_expected": "The documents mention garage conversion only for parking and setbacks; no plan content specific to converting a garage is stated."
+    },
+    {
+      "expected_item": "Specific Title 24 forms required for an ADU",
+      "why_expected": "IB 400 says only 'Title 24 Energy calculations'; IB 140 names MF-1R and CF-1R for additions/alterations but not for ADUs."
+    },
+    {
+      "expected_item": "Which permit type (Building vs Combination) applies to one ADU on a single-family lot",
+      "why_expected": "IB 400 defers to IB 125, which was not provided."
+    },
+    {
+      "expected_item": "Proof of ownership or owner authorization documents",
+      "why_expected": "Not mentioned; only the owner's name, address and phone on the site plan and an Applicant type question are."
+    },
+    {
+      "expected_item": "Utility, sewer or water service requirements for the ADU",
+      "why_expected": "Not mentioned in the four documents; only the DS-16 water meter card."
+    },
+    {
+      "expected_item": "Number of plan sets or required signatures/stamps on plans (other than truss calcs and surveyor)",
+      "why_expected": "Not mentioned; submittal is electronic."
+    },
+    {
+      "expected_item": "Egress and ceiling-height requirements",
+      "why_expected": "IB 140 p.4 refers to Figure 12 for emergency escape windows in bedrooms (figure is an image), and IB 400 p.5 refers to California Building Standards Code room dimensions; ceiling height is not mentioned."
+    },
+    {
+      "expected_item": "Garage-to-ADU fire separation or rated wall details",
+      "why_expected": "IB 400 mentions fire separation distance and opening protection only generally, with no plan detail requirement."
+    }
+  ]
+}
