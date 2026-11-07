@@ -15,6 +15,5 @@ dependencies = [
 
 [dependency-groups]
 dev = [
-    "dvc[gdrive]>=3.67.1",
     "jupyterlab>=4.6.5",
 ]

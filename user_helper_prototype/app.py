@@ -12,8 +12,8 @@ from pypdf import PdfReader
 # Models to try in order. Override with GEMINI_MODELS="modelA,modelB",
 # using the exact model names shown in Google AI Studio.
 MODELS = os.environ.get("GEMINI_MODELS", "gemini-3.1-flash-lite,gemini-3.8-flash,gemini-3-flash-preview").split(",")
-CHECKLIST_JSON = Path("data/checklist.json")
-CYCLES_CSV = Path("data/processed/review_cycles.csv")
+CHECKLIST_JSON = Path("../data/checklist.json")
+CYCLES_CSV = Path("../data/processed/review_cycles.csv")
 MIN_PAIRS = 50          # hide disciplines with too little data
 MAX_APP_CHARS = 30000   # cap on application text sent to the model
 STATUSES = ["found", "missing", "unclear", "not_applicable"]
